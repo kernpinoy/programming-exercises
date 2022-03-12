@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class kpsjacoboactivityno2A
 {
-    public static final double annualInterestRate = 0.079;
+    public static final double annualInterestRate = 0.0749;
 
     public static void main(String[] args)
     {   
