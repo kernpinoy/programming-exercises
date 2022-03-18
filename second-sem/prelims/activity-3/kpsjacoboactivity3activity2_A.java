@@ -29,8 +29,7 @@ public class kpsjacoboactivity3activity2_A
         // output results
         String txtOutput = ("Payment Amount: " + currency.format(mortgage) + "\n");
         txtOutput += ("Monthly Interest: " + currency.format(monthlyInterest) + "\n");
-        txtOutput += ("Principle Amount: " + currency.format(monthlyPrinciple) + "\n");
-        txtOutput += ("Clive balik kana plssss" + "\n");       
+        txtOutput += ("Principle Amount: " + currency.format(monthlyPrinciple) + "\n");       
         JOptionPane.showMessageDialog(null, txtOutput);
         
         System.exit(0);
