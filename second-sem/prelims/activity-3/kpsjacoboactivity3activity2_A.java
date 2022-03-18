@@ -2,7 +2,7 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import javax.swing.JOptionPane;
 
-public class kpsjacoboactivity3activity_A 
+public class kpsjacoboactivity3activity2_A 
 {   
     // initialize global variable
     public static final double annualInterestRate = 0.0749;
