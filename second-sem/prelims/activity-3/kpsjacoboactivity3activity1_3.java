@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class rdangananactivity3activity1_3 
+public class kpsjacoboactivity3activity1_3 
 {
     public static void main(String[] args) 
     {
