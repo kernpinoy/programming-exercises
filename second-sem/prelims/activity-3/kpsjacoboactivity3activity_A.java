@@ -2,7 +2,7 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import javax.swing.JOptionPane;
 
-public class mortgage 
+public class kpsjacoboactivity3activity_A 
 {   
     // initialize global variable
     public static final double annualInterestRate = 0.0749;
@@ -30,7 +30,7 @@ public class mortgage
         String txtOutput = ("Payment Amount: " + currency.format(mortgage) + "\n");
         txtOutput += ("Monthly Interest: " + currency.format(monthlyInterest) + "\n");
         txtOutput += ("Principle Amount: " + currency.format(monthlyPrinciple) + "\n");
-       
+        txtOutput += ("Clive balik kana plssss" + "\n");       
         JOptionPane.showMessageDialog(null, txtOutput);
         
         System.exit(0);
