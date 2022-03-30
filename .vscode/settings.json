@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "stdio.h": "c"
-    },
-    "java.project.sourcePaths": [
-        "second-sem/prelims/activity-2",
-        "second-sem/prelims"
-    ]
-}
