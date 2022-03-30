@@ -1,4 +1,5 @@
 import javax.swing.JOptionPane;
+import java.lang.Math;
 
 public class kpsjacoboprelimexamlecture
 {
@@ -22,16 +23,21 @@ public class kpsjacoboprelimexamlecture
         int age = Integer.parseInt(ageStr);
 
         // check for sex then compute
-        if (name.compareTo("Female") == 0)
+        if (sex.compareTo("Female") == 0)
             bmr = 665 + (4.3 * weight) + (4.7 * height) - (4.7 * age);
-        else
-            bmr = 66 + (6.3 * weight) + (12.9 * height) - (6.8);
+        else if (sex.compareTo("Male") == 0)
+            bmr = 66 + (6.3 * weight) + (12.9 * height) - (6.8 * age);
+        else 
+        {
+            JOptionPane.showMessageDialog(null, "Male and Female are case-sensitive. Try again.");
+            System.exit(1);
+        }
 
         // compute how many chocolate bars are needed
         double numOfBars = bmr / BarCalorie;
 
-        String out = String.format("Name: %s\nSex: %s\nHeight: %.2f\nWeight: %.2f\nAge: %d\nBMR: %.2f\nChocolate bars needed: %.2f"
-        , name, sex, height, weight, age, bmr, numOfBars);
+        String out = String.format("Name: %s\nSex: %s\nHeight: %.2f\nWeight: %.2f\nAge: %d\nBMR: %.2f\nChocolate bars needed: %d"
+        , name, sex, height, weight, age, bmr, (int)Math.round(numOfBars));
 
         JOptionPane.showMessageDialog(null, out);
 
