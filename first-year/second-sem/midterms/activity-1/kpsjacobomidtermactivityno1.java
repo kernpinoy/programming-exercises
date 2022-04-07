@@ -8,7 +8,10 @@ public class kpsjacobomidtermactivityno1
         int month = Integer.parseInt(JOptionPane.showInputDialog(null, 
         "Enter month (in numbers)"));
 
-        int[] days = new int[] {28, 29, 30, 31};
+        // variables to be played with
+        int[] days = new int[] {28, 29, 30, 31}; 
+        /* array size is 4. we start counting at 0.
+        so 28 is 0 and 31 is 3*/ 
         int leap = 0, not = 0;
         String text = "";
 
