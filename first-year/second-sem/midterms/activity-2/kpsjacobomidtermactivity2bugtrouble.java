@@ -13,7 +13,7 @@ public class kpsjacobomidtermactivity2bugtrouble
         
         // ask for the house volume
         System.out.printf("Enter house volume (in cubic feet): ");
-        double houseVolume = Double.parseDouble(stdin.nextLine());
+        double houseVolume = Double.parseDouble(stdin.nextLine().replace(" ", ""));
         
         // ask for estimated roach population
         System.out.printf("Enter estimated roach population: ");
