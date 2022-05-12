@@ -22,14 +22,17 @@ public class kpsjacobomidtermexamno2
             System.out.printf("Enter number of toss: ");
             String tossString = stdin.nextLine().replaceAll(" ", "");
             
+            // continue loop if not empty
             if (tossString.isEmpty())
             {
                 continue;
             }
 
+            // convert string to int
             tossNum = Integer.parseInt(tossString);
 
-            if (tossNum == 0)
+            // if int is less than or greater than 0, try again
+            if (tossNum <= 0)
             {
                 continue;
             }
