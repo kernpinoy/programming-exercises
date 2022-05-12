@@ -8,6 +8,7 @@ public class kpsjacobomidtermexamno2
     {   
         return ((double) x / y) * 100.0;
     }
+    
     public static void main(String[] args) 
     {
         // create object of the Scanner class
