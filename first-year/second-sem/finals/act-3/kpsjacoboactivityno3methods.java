@@ -5,5 +5,9 @@ class kpsjacoboactivityno3methods
         kpsjacoboactivity3class cruiser = new kpsjacoboactivity3class();
         
         cruiser.start();
+
+        // App exit
+        kpsjacoboactivity3class.stdin.close();
+        System.exit(0);
     }
 }

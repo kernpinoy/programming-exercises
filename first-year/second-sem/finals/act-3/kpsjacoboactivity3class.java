@@ -28,7 +28,7 @@ public class kpsjacoboactivity3class
     {   
         tankCapacity = input("Enter tank's max capacity (liters): ", 1, Integer.MAX_VALUE);
         boatMaxSpeed = input("Enter boat's max speed (km/s): ", 1, Integer.MAX_VALUE);
-        motorEfficiency = input("Enter motor's efficiency: ", 1, Integer.MAX_VALUE);
+        motorEfficiency = input("Enter motor's efficiency (250 - 700): ", 250, 700);
     }
 
     // priming your boat
@@ -43,7 +43,7 @@ public class kpsjacoboactivity3class
     private void boatRun()
     {   
         // compute for the fuel and  distance covered
-        double fuelLeft = motorEfficiency * (currentSpeed * currentSpeed) * time;
+        double fuelLeft = (motorEfficiency * (currentSpeed * currentSpeed) * time) % tankFuelAmount;
         distanceCovered = currentSpeed * time;
 
         // if fuel gone
@@ -52,7 +52,7 @@ public class kpsjacoboactivity3class
             System.out.println("Fuel gone!");
         }
 
-        System.out.printf("Speed: %.1f km/s | Gas: %.1f liters | Distance: %.1f KM %n", distanceCovered, fuelLeft, distanceCovered);
+        System.out.printf("Speed: %.1f km/s | Gas: %.1f liters | Distance: %.1f KM %n", currentSpeed, fuelLeft, distanceCovered);
     }
 
     // Quality of life method
