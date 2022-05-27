@@ -2,17 +2,23 @@ public class kpsjacoboactivityno1methods
 {
     public static void main(String[] args) 
     {
+        // vars
+        int minVal = 0;
+        int maxVal = 10;
+        String textPrompt = "Enter number: ";
+
+
         /* object */
         kpsjacoboactivity1class t1 = new kpsjacoboactivity1class();
 
         // setting up the object
-        t1.setMinVal(0);
+        t1.setMinVal(minVal);
         System.out.printf("t1's minVal: %d%n", t1.getMinVal());
         
-        t1.setMaxVal(10);
+        t1.setMaxVal(maxVal);
         System.out.printf("t1's maxVal: %d%n", t1.getMaxVal());
 
-        t1.setTextPrompt("Enter number: ");
+        t1.setTextPrompt(textPrompt);
         System.out.printf("t1's textPrompt: '%s'%n", t1.getTextPrompt());
         
         int number = t1.getValue();
